@@ -2,9 +2,9 @@
 
 ## Integrantes
 * Ninamango Arroyo, Bryan.
-* Nombre y Apellidos
-* Nombre y Apellidos
-* Nombre y Apellidos
+* Carrillo Paurinotto, Josue.
+* Villegas Arce, Carlos.
+* Davila Nuñez, Kurth.
 
 ## Plataforma de Streaming
 El objetivo del proyecto final es implementar una plataforma de **streaming**. Un programa que administre la **búsqueda y visualización** de la sinopsis de películas. Para ello se debe implementar las siguientes operaciones:
