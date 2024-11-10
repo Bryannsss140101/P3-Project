@@ -1,6 +1,14 @@
 #include <iostream>
+#include <conio.h>
+#include "src/main/csv/Csv.h"
+
+using namespace std;
+
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    auto csv = Csv("data.csv");
+
+    _getch();
+
     return 0;
 }
