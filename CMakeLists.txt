@@ -7,7 +7,7 @@ add_executable(P3_Project main.cpp
         src/main/csv/Csv.cpp
         src/main/csv/Csv.h
         src/main/register/Register.h
-        src/main/csv/DataFrame.cpp
-        src/main/csv/DataFrame.h
-        src/main/csv/Dictionary.h
+        src/main/dataframe/DataFrame.cpp
+        src/main/dataframe/DataFrame.h
+        src/main/Dictionary/Dictionary.h
 )

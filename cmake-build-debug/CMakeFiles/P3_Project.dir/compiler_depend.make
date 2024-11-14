@@ -19,7 +19,6 @@ CMakeFiles/P3_Project.dir/main.cpp.obj: D:/Programming\ III/P3-Project/main.cpp 
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
@@ -42,7 +41,6 @@ CMakeFiles/P3_Project.dir/main.cpp.obj: D:/Programming\ III/P3-Project/main.cpp 
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
@@ -56,6 +54,7 @@ CMakeFiles/P3_Project.dir/main.cpp.obj: D:/Programming\ III/P3-Project/main.cpp 
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_util.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
@@ -66,11 +65,8 @@ CMakeFiles/P3_Project.dir/main.cpp.obj: D:/Programming\ III/P3-Project/main.cpp 
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
@@ -95,7 +91,6 @@ CMakeFiles/P3_Project.dir/main.cpp.obj: D:/Programming\ III/P3-Project/main.cpp 
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
@@ -107,13 +102,13 @@ CMakeFiles/P3_Project.dir/main.cpp.obj: D:/Programming\ III/P3-Project/main.cpp 
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numbers \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -181,9 +176,10 @@ CMakeFiles/P3_Project.dir/main.cpp.obj: D:/Programming\ III/P3-Project/main.cpp 
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  D:/Programming\ III/P3-Project/src/main/dataframe/DataFrame.h \
+  D:/Programming\ III/P3-Project/src/main/dictionary/Dictionary.h \
   D:/Programming\ III/P3-Project/src/main/csv/Csv.h \
-  D:/Programming\ III/P3-Project/src/main/csv/DataFrame.h \
-  D:/Programming\ III/P3-Project/src/main/csv/Dictionary.h
+  D:/Programming\ III/P3-Project/src/main/dataframe/DataFrame.h
 
 CMakeFiles/P3_Project.dir/src/main/csv/Csv.cpp.obj: D:/Programming\ III/P3-Project/src/main/csv/Csv.cpp \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
@@ -203,7 +199,6 @@ CMakeFiles/P3_Project.dir/src/main/csv/Csv.cpp.obj: D:/Programming\ III/P3-Proje
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
@@ -226,7 +221,6 @@ CMakeFiles/P3_Project.dir/src/main/csv/Csv.cpp.obj: D:/Programming\ III/P3-Proje
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
@@ -240,6 +234,7 @@ CMakeFiles/P3_Project.dir/src/main/csv/Csv.cpp.obj: D:/Programming\ III/P3-Proje
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_util.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
+  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
@@ -250,11 +245,8 @@ CMakeFiles/P3_Project.dir/src/main/csv/Csv.cpp.obj: D:/Programming\ III/P3-Proje
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
@@ -279,7 +271,6 @@ CMakeFiles/P3_Project.dir/src/main/csv/Csv.cpp.obj: D:/Programming\ III/P3-Proje
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
@@ -290,13 +281,13 @@ CMakeFiles/P3_Project.dir/src/main/csv/Csv.cpp.obj: D:/Programming\ III/P3-Proje
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
-  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numbers \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -362,9 +353,11 @@ CMakeFiles/P3_Project.dir/src/main/csv/Csv.cpp.obj: D:/Programming\ III/P3-Proje
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  D:/Programming\ III/P3-Project/src/main/dataframe/DataFrame.h \
+  D:/Programming\ III/P3-Project/src/main/dictionary/Dictionary.h \
   D:/Programming\ III/P3-Project/src/main/csv/Csv.h
 
-CMakeFiles/P3_Project.dir/src/main/csv/DataFrame.cpp.obj: D:/Programming\ III/P3-Project/src/main/csv/DataFrame.cpp \
+CMakeFiles/P3_Project.dir/src/main/dataframe/DataFrame.cpp.obj: D:/Programming\ III/P3-Project/src/main/dataframe/DataFrame.cpp \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
@@ -527,7 +520,8 @@ CMakeFiles/P3_Project.dir/src/main/csv/DataFrame.cpp.obj: D:/Programming\ III/P3
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
-  D:/Programming\ III/P3-Project/src/main/csv/DataFrame.h
+  D:/Programming\ III/P3-Project/src/main/dictionary/Dictionary.h \
+  D:/Programming\ III/P3-Project/src/main/dataframe/DataFrame.h
 
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:
@@ -549,8 +543,6 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit:
-
-D:/Programming\ III/P3-Project/src/main/csv/DataFrame.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h:
 
@@ -586,19 +578,15 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h:
 
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h:
-
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h:
-
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h:
 
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h:
+C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h:
+
+C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h:
-
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc:
 
@@ -662,15 +650,13 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h:
 
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
-
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h:
-
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h:
-
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc:
+
+C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
+
+C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h:
 
@@ -680,6 +666,8 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_cmp.h:
 
+C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc:
+
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h:
@@ -688,13 +676,9 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h:
 
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h:
-
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h:
-
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:
 
@@ -728,6 +712,8 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio:
 
+C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream:
+
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar:
@@ -739,8 +725,6 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception:
-
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h:
 
@@ -763,10 +747,6 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream:
-
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h:
-
-C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new:
 
@@ -830,8 +810,6 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
 
-D:/Programming\ III/P3-Project/src/main/csv/DataFrame.cpp:
-
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h:
@@ -864,7 +842,11 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/process.h:
 
+D:/Programming\ III/P3-Project/src/main/dataframe/DataFrame.h:
+
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread.h:
+
+C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 
@@ -892,10 +874,12 @@ C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/vadefs.h:
 
+D:/Programming\ III/P3-Project/src/main/dataframe/DataFrame.cpp:
+
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wchar.h:
 
 C:/Users/Bryan/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include/wctype.h:
 
-D:/Programming\ III/P3-Project/src/main/csv/Dictionary.h:
+D:/Programming\ III/P3-Project/src/main/dictionary/Dictionary.h:
 
 D:/Programming\ III/P3-Project/src/main/csv/Csv.cpp:

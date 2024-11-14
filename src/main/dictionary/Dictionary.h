@@ -15,7 +15,9 @@ class Dictionary {
     typedef std::vector<std::pair<TKey, TValue> > Collection;
 
 public:
-    Collection get_data() const;
+    const Collection &get_collection() const;
+
+    const TKey &get_key(const int &index) const;
 
     int count() const;
 
@@ -41,41 +43,50 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const Dictionary<K, V> &other);
 
 private:
-    Collection data;
+    Collection collection;
 };
 
 template<class TKey, class TValue>
-typename Dictionary<TKey, TValue>::Collection Dictionary<TKey, TValue>::get_data() const {
-    return data;
+const typename
+Dictionary<TKey, TValue>::Collection &Dictionary<TKey, TValue>::get_collection() const {
+    return collection;
+}
+
+template<class TKey, class TValue>
+const TKey &Dictionary<TKey, TValue>::get_key(const int &index) const {
+    if (index >= count())
+        throw std::out_of_range("The index does not exist in the dictionary");
+
+    return collection[index].first;
 }
 
 template<class TKey, class TValue>
 int Dictionary<TKey, TValue>::count() const {
-    return data.size();
+    return collection.size();
 }
 
 template<class TKey, class TValue>
-Dictionary<TKey, TValue>::Dictionary(const Dictionary &other): data(other.get_data()) {
+Dictionary<TKey, TValue>::Dictionary(const Dictionary &other): collection(other.get_collection()) {
 }
 
 template<class TKey, class TValue>
-Dictionary<TKey, TValue>::Dictionary(Dictionary &&other) noexcept: data(std::move(other.data)) {
+Dictionary<TKey, TValue>::Dictionary(Dictionary &&other) noexcept: collection(std::move(other.collection)) {
 }
 
 template<class TKey, class TValue>
 void Dictionary<TKey, TValue>::add(TKey key, TValue value) {
-    if (contains_key(key) == data.end())
-        data.push_back({key, value});
+    if (contains_key(key) == collection.end())
+        collection.push_back({key, value});
 }
 
 template<class TKey, class TValue>
 void Dictionary<TKey, TValue>::clear() {
-    data.clear();
+    collection.clear();
 }
 
 template<class TKey, class TValue>
 auto Dictionary<TKey, TValue>::contains_key(TKey key) {
-    return std::ranges::find_if(data.begin(), data.end(), [&](const auto &e) {
+    return std::ranges::find_if(collection.begin(), collection.end(), [&](const auto &e) {
         return key == e.first;
     });
 }
@@ -84,15 +95,15 @@ template<class TKey, class TValue>
 void Dictionary<TKey, TValue>::remove(TKey key) {
     auto it = contains_key(key);
 
-    if (it != data.end())
-        data.erase(it);
+    if (it != collection.end())
+        collection.erase(it);
 }
 
 template<class TKey, class TValue>
 TValue &Dictionary<TKey, TValue>::operator[](const TKey &key) {
     auto it = contains_key(key);
 
-    if (it == data.end())
+    if (it == collection.end())
         throw std::out_of_range("The key does not exist in the dictionary");
 
     return it->second;
@@ -108,7 +119,7 @@ inline std::ostream &operator <<(std::ostream &os, const std::vector<std::string
 
 template<class TKey, class TValue>
 std::ostream &operator<<(std::ostream &os, const Dictionary<TKey, TValue> &other) {
-    std::ranges::for_each(other.data, [&](const auto &e) {
+    std::ranges::for_each(other.collection, [&](const auto &e) {
         os
                 << "[" << e.first << "]: "
                 << "{" << e.second << "}"

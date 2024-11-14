@@ -3,10 +3,9 @@
 //
 #include "Csv.h"
 
-#include <algorithm>
 
-std::vector<std::string> Csv::get_data() const {
-    return data;
+const DataFrame &Csv::get_dataframe() const {
+    return dataframe;
 }
 
 Csv::Csv(const std::string &file_name)
@@ -22,7 +21,15 @@ bool Csv::read_csv() {
     if (!file.is_open())
         return false;
 
-    data = normalizer();
+    const auto data = normalizer();
+
+    for (int i = 0; i < data.size(); ++i) {
+        const auto temp = split(data[i], ',');
+        if (i == 0)
+            dataframe.add_header(temp);
+        else
+            dataframe.add_row(temp);
+    }
 
     file.close();
     return true;

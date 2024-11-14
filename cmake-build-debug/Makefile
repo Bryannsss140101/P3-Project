@@ -176,29 +176,29 @@ src/main/csv/Csv.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\P3_Project.dir\build.make CMakeFiles/P3_Project.dir/src/main/csv/Csv.cpp.s
 .PHONY : src/main/csv/Csv.cpp.s
 
-src/main/csv/DataFrame.obj: src/main/csv/DataFrame.cpp.obj
-.PHONY : src/main/csv/DataFrame.obj
+src/main/dataframe/DataFrame.obj: src/main/dataframe/DataFrame.cpp.obj
+.PHONY : src/main/dataframe/DataFrame.obj
 
 # target to build an object file
-src/main/csv/DataFrame.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\P3_Project.dir\build.make CMakeFiles/P3_Project.dir/src/main/csv/DataFrame.cpp.obj
-.PHONY : src/main/csv/DataFrame.cpp.obj
+src/main/dataframe/DataFrame.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P3_Project.dir\build.make CMakeFiles/P3_Project.dir/src/main/dataframe/DataFrame.cpp.obj
+.PHONY : src/main/dataframe/DataFrame.cpp.obj
 
-src/main/csv/DataFrame.i: src/main/csv/DataFrame.cpp.i
-.PHONY : src/main/csv/DataFrame.i
+src/main/dataframe/DataFrame.i: src/main/dataframe/DataFrame.cpp.i
+.PHONY : src/main/dataframe/DataFrame.i
 
 # target to preprocess a source file
-src/main/csv/DataFrame.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\P3_Project.dir\build.make CMakeFiles/P3_Project.dir/src/main/csv/DataFrame.cpp.i
-.PHONY : src/main/csv/DataFrame.cpp.i
+src/main/dataframe/DataFrame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P3_Project.dir\build.make CMakeFiles/P3_Project.dir/src/main/dataframe/DataFrame.cpp.i
+.PHONY : src/main/dataframe/DataFrame.cpp.i
 
-src/main/csv/DataFrame.s: src/main/csv/DataFrame.cpp.s
-.PHONY : src/main/csv/DataFrame.s
+src/main/dataframe/DataFrame.s: src/main/dataframe/DataFrame.cpp.s
+.PHONY : src/main/dataframe/DataFrame.s
 
 # target to generate assembly for a file
-src/main/csv/DataFrame.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\P3_Project.dir\build.make CMakeFiles/P3_Project.dir/src/main/csv/DataFrame.cpp.s
-.PHONY : src/main/csv/DataFrame.cpp.s
+src/main/dataframe/DataFrame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P3_Project.dir\build.make CMakeFiles/P3_Project.dir/src/main/dataframe/DataFrame.cpp.s
+.PHONY : src/main/dataframe/DataFrame.cpp.s
 
 # Help Target
 help:
@@ -215,9 +215,9 @@ help:
 	@echo ... src/main/csv/Csv.obj
 	@echo ... src/main/csv/Csv.i
 	@echo ... src/main/csv/Csv.s
-	@echo ... src/main/csv/DataFrame.obj
-	@echo ... src/main/csv/DataFrame.i
-	@echo ... src/main/csv/DataFrame.s
+	@echo ... src/main/dataframe/DataFrame.obj
+	@echo ... src/main/dataframe/DataFrame.i
+	@echo ... src/main/dataframe/DataFrame.s
 .PHONY : help
 
 

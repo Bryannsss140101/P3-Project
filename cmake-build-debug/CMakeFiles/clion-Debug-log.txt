@@ -1,4 +1,4 @@
 C:\Users\Bryan\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S "D:\Programming III\P3-Project" -B "D:\Programming III\P3-Project\cmake-build-debug"
--- Configuring done (0.3s)
--- Generating done (0.0s)
+-- Configuring done (0.8s)
+-- Generating done (0.2s)
 -- Build files have been written to: D:/Programming III/P3-Project/cmake-build-debug

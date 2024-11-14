@@ -7,11 +7,12 @@
 
 #include <fstream>
 #include <vector>
-#include <map>
+#include <sstream>
+#include "../dataframe/DataFrame.h"
 
 class Csv {
 public:
-    std::vector<std::string> get_data() const;
+    const DataFrame &get_dataframe() const;
 
     explicit Csv(const std::string &file_name);
 
@@ -22,9 +23,20 @@ public:
 private:
     std::string path;
     std::ifstream file;
-    std::vector<std::string> data;
+    DataFrame dataframe;
 
     std::vector<std::string> normalizer();
 };
+
+inline std::vector<std::string> split(const std::string &str, const char &delimiter) {
+    std::vector<std::string> tokens;
+    std::istringstream stream(str);
+    std::string token;
+
+    while (std::getline(stream, token, delimiter))
+        tokens.push_back(token);
+
+    return tokens;
+}
 
 #endif //READER_H
