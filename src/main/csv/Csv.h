@@ -6,37 +6,25 @@
 #define READER_H
 
 #include <fstream>
-#include <sstream>
 #include <vector>
+#include <map>
 
 class Csv {
-    std::string path;
-    std::ifstream file;
-
 public:
+    std::vector<std::string> get_data() const;
+
     explicit Csv(const std::string &file_name);
 
     ~Csv();
 
+    bool read_csv();
+
+private:
+    std::string path;
+    std::ifstream file;
+    std::vector<std::string> data;
+
     std::vector<std::string> normalizer();
-
-    template<class T>
-    static std::vector<T> split(const std::string &line,
-                                const char &delimiter);
 };
-
-template<class T>
-std::vector<T> Csv::split(const std::string &line, const char &delimiter) {
-    std::vector<T> tokens;
-    std::stringstream ss(line);
-    T token;
-
-    while (std::getline(ss, token, delimiter)) {
-
-    }
-    //tokens.push_back(token);
-
-    return tokens;
-}
 
 #endif //READER_H

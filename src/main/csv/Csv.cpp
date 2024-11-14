@@ -5,15 +5,27 @@
 
 #include <algorithm>
 
+std::vector<std::string> Csv::get_data() const {
+    return data;
+}
+
 Csv::Csv(const std::string &file_name)
     : path("../src/main/data/" + file_name), file(path) {
-    if (!file.is_open())
-        throw std::runtime_error("File could not be opened.");
 }
 
 Csv::~Csv() {
     if (file.is_open())
         file.close();
+}
+
+bool Csv::read_csv() {
+    if (!file.is_open())
+        return false;
+
+    data = normalizer();
+
+    file.close();
+    return true;
 }
 
 std::vector<std::string> Csv::normalizer() {
