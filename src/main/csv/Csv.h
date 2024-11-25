@@ -6,35 +6,35 @@
 #define READER_H
 
 #include <fstream>
-#include <sstream>
 #include <vector>
+#include <sstream>
+#include "../dataframe/DataFrame.h"
 
 class Csv {
-    std::string path;
-    std::ifstream file;
-
 public:
+    const DataFrame &get_dataframe() const;
+
     explicit Csv(const std::string &file_name);
 
     ~Csv();
 
-    std::vector<std::string> normalizer();
+    bool read_csv();
 
-    template<class T>
-    static std::vector<T> split(const std::string &line,
-                                const char &delimiter);
+private:
+    std::string path;
+    std::ifstream file;
+    DataFrame dataframe;
+
+    std::vector<std::string> normalizer();
 };
 
-template<class T>
-std::vector<T> Csv::split(const std::string &line, const char &delimiter) {
-    std::vector<T> tokens;
-    std::stringstream ss(line);
-    T token;
+inline std::vector<std::string> split(const std::string &str, const char &delimiter) {
+    std::vector<std::string> tokens;
+    std::istringstream stream(str);
+    std::string token;
 
-    while (std::getline(ss, token, delimiter)) {
-
-    }
-    //tokens.push_back(token);
+    while (std::getline(stream, token, delimiter))
+        tokens.push_back(token);
 
     return tokens;
 }

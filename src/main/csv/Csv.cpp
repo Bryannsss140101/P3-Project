@@ -3,17 +3,36 @@
 //
 #include "Csv.h"
 
-#include <algorithm>
+
+const DataFrame &Csv::get_dataframe() const {
+    return dataframe;
+}
 
 Csv::Csv(const std::string &file_name)
     : path("../src/main/data/" + file_name), file(path) {
-    if (!file.is_open())
-        throw std::runtime_error("File could not be opened.");
 }
 
 Csv::~Csv() {
     if (file.is_open())
         file.close();
+}
+
+bool Csv::read_csv() {
+    if (!file.is_open())
+        return false;
+
+    const auto data = normalizer();
+
+    for (int i = 0; i < data.size(); ++i) {
+        const auto temp = split(data[i], ',');
+        if (i == 0)
+            dataframe.add_header(temp);
+        else
+            dataframe.add_row(temp);
+    }
+
+    file.close();
+    return true;
 }
 
 std::vector<std::string> Csv::normalizer() {
