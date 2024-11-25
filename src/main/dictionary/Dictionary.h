@@ -17,7 +17,7 @@ class Dictionary {
 public:
     const Collection &get_collection() const;
 
-    const TKey &get_key(const int &index) const;
+    const TKey &get_key(int index) const;
 
     int count() const;
 
@@ -29,13 +29,13 @@ public:
 
     ~Dictionary() = default ;
 
-    void add(TKey key, TValue value);
+    void add(const TKey &key, const TValue &value);
 
     void clear();
 
-    auto contains_key(TKey key);
+    auto contains_key(const TKey &key);
 
-    void remove(TKey key);
+    void remove(const TKey &key);
 
     TValue &operator[](const TKey &key);
 
@@ -53,7 +53,7 @@ Dictionary<TKey, TValue>::Collection &Dictionary<TKey, TValue>::get_collection()
 }
 
 template<class TKey, class TValue>
-const TKey &Dictionary<TKey, TValue>::get_key(const int &index) const {
+const TKey &Dictionary<TKey, TValue>::get_key(int index) const {
     if (index >= count())
         throw std::out_of_range("The index does not exist in the dictionary");
 
@@ -74,7 +74,7 @@ Dictionary<TKey, TValue>::Dictionary(Dictionary &&other) noexcept: collection(st
 }
 
 template<class TKey, class TValue>
-void Dictionary<TKey, TValue>::add(TKey key, TValue value) {
+void Dictionary<TKey, TValue>::add(const TKey &key, const TValue &value) {
     if (contains_key(key) == collection.end())
         collection.push_back({key, value});
 }
@@ -85,14 +85,14 @@ void Dictionary<TKey, TValue>::clear() {
 }
 
 template<class TKey, class TValue>
-auto Dictionary<TKey, TValue>::contains_key(TKey key) {
+auto Dictionary<TKey, TValue>::contains_key(const TKey &key) {
     return std::ranges::find_if(collection.begin(), collection.end(), [&](const auto &e) {
         return key == e.first;
     });
 }
 
 template<class TKey, class TValue>
-void Dictionary<TKey, TValue>::remove(TKey key) {
+void Dictionary<TKey, TValue>::remove(const TKey &key) {
     auto it = contains_key(key);
 
     if (it != collection.end())
