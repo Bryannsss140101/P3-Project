@@ -9,5 +9,7 @@ add_executable(P3_Project main.cpp
         src/main/dataframe/DataFrame.cpp
         src/main/dataframe/DataFrame.h
         src/main/Dictionary/Dictionary.h
-        src/main/bst/BST.h
+        src/main/trie/Trie.cpp
+        src/main/trie/Trie.h
+        src/main/node/TrieNode.h
 )
