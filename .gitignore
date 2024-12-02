@@ -1,41 +1,75 @@
-# C++ build artifacts
+### C++ template
+# Compiled Object files
+*.slo
+*.lo
 *.o
-*.a
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
 *.exe
 *.out
-*.obj
+*.app
 
-# CLion-specific files
-.idea/
-*.iml
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# CMake specific files
-CMakeCache.txt
-CMakeFiles/
-CMakeUserPresets.json
-CMakeLists.txt.user
-CMakeLists.txt.cache
-
-# CLion generated folder for debug/release builds
-cmake-build-debug/
-cmake-build-release/
-cmake-build-*/
-
-# User-specific config files (CLion & CMake)
+# User-specific stuff:
 .idea/workspace.xml
 .idea/tasks.xml
-.idea/sonarlint/
-.idea/dictionaries/
+.idea/dictionaries
 .idea/vcs.xml
+.idea/jsLibraryMappings.xml
 
-# Ignore compiled and temporary files from other tools
-*.log
-*.tmp
-*.swp
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
 
-# System files
-.DS_Store
-Thumbs.db
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
