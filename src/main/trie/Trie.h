@@ -6,7 +6,7 @@
 #define TRIE_H
 
 #include <string>
-
+#include <iostream>
 #include "../node/TrieNode.h"
 
 class Trie {
@@ -19,12 +19,16 @@ public:
 
     bool search(const std::string &word);
 
+    void DFS(const std::string &word);
+
 private:
     TrieNode<char> *root;
 
-    TrieNode<char> *insert_node(TrieNode<char> *trie_node, const std::string &word);
+    TrieNode<char> *insert(TrieNode<char> *trie_node, const std::string &word);
 
-    TrieNode<char> *search_node(TrieNode<char> *trie_node, const std::string &word);
+    TrieNode<char> *search(TrieNode<char> *trie_node, const std::string &word);
+
+    void DFS(TrieNode<char> *trie_node, const std::string &word);
 };
 
 #endif //TRIE_H
