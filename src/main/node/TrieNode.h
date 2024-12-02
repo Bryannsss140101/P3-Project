@@ -11,6 +11,8 @@ template<class T>
 class TrieNode {
 public:
     void set_end(const bool is_end) { end = is_end; }
+    bool get_end() const { return end; }
+    auto get_nodes() { return nodes; }
 
     explicit TrieNode()
         : nodes(std::unordered_map<T, TrieNode *>()), end(false) {
