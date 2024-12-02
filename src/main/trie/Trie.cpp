@@ -4,8 +4,9 @@
 
 #include "Trie.h"
 
-#include <stack>
-#include <unordered_set>
+TrieNode<char> *Trie::get_root() const {
+    return root;
+}
 
 Trie::Trie() : root(new TrieNode<char>{}) {
 }
@@ -18,12 +19,12 @@ void Trie::insert(const std::string &word) {
     root = insert(root, word);
 }
 
-bool Trie::search(const std::string &word) {
+TrieNode<char> *Trie::search(const std::string &word) {
     return search(root, word);
 }
 
-void Trie::DFS(const std::string &word) {
-    DFS(root, word);
+bool Trie::exist(const std::string &word) {
+    return search(root, word);
 }
 
 TrieNode<char> *Trie::insert(TrieNode<char> *trie_node, const std::string &word) {
@@ -46,7 +47,4 @@ TrieNode<char> *Trie::search(TrieNode<char> *trie_node, const std::string &word)
     const auto c = word[0];
 
     return search(trie_node->get_node(c), word.substr(1));
-}
-
-void Trie::DFS(TrieNode<char> *trie_node, const std::string &word) {
 }

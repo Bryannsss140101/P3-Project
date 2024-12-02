@@ -11,15 +11,17 @@
 
 class Trie {
 public:
+    TrieNode<char>* get_root() const;
+
     Trie();
 
     ~Trie();
 
     void insert(const std::string &word);
 
-    bool search(const std::string &word);
+    TrieNode<char> *search(const std::string &word);
 
-    void DFS(const std::string &word);
+    bool exist(const std::string &word);
 
 private:
     TrieNode<char> *root;
@@ -27,8 +29,6 @@ private:
     TrieNode<char> *insert(TrieNode<char> *trie_node, const std::string &word);
 
     TrieNode<char> *search(TrieNode<char> *trie_node, const std::string &word);
-
-    void DFS(TrieNode<char> *trie_node, const std::string &word);
 };
 
 #endif //TRIE_H

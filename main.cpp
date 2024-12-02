@@ -15,18 +15,6 @@ int main() {
 
     cout << df.get_data() << endl;*/
 
-    Trie tree;
-
-    tree.insert("ap");
-    tree.insert("apt");
-    tree.insert("apto");
-    tree.insert("aptitud");
-    tree.insert("persa");
-    tree.insert("perro");
-    tree.insert("pedro");
-
-    tree.DFS("a");
-
     _getch();
 
     return 0;
