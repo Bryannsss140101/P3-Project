@@ -1,32 +1,41 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# C++ build artifacts
 *.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
+*.a
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
 *.out
-*.app
+*.obj
+
+# CLion-specific files
+.idea/
+*.iml
+
+# CMake specific files
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+CMakeLists.txt.user
+CMakeLists.txt.cache
+
+# CLion generated folder for debug/release builds
+cmake-build-debug/
+cmake-build-release/
+cmake-build-*/
+
+# User-specific config files (CLion & CMake)
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/sonarlint/
+.idea/dictionaries/
+.idea/vcs.xml
+
+# Ignore compiled and temporary files from other tools
+*.log
+*.tmp
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
