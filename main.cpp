@@ -51,7 +51,7 @@ int main() {
 
     for (const auto& suggestion : suggestions2)
         std::cout << "Sugerencias para 'barco' en sinopsis: " << suggestion << std::endl;
-
+    cout<<endl;
     _getch();
     return 0;
 }
