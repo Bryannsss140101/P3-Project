@@ -1,19 +1,19 @@
 #include <iostream>
 #include <conio.h>
-#include <unordered_map>
-#include "src/main/trie/Trie.h"
-
-#include "src/main/csv/Csv.h"
-#include "src/main/dataframe/DataFrame.h"
+#include "src/main/searcher/Searcher.h"
 
 using namespace std;
 
 int main() {
-    /*auto csv = Csv("mpst_full_data.csv");
-    csv.read_csv();
-    auto df = csv.get_dataframe();
+    Searcher searcher("mpst_full_data.csv");
 
-    cout << df.get_data() << endl;*/
+    searcher.find("I tre volti della paura");
+    searcher.find("Dungeons & Dragons: The Book of Vile Darkness");
+    searcher.find("The Shop Around the Corner");
+    searcher.find("Mr. Holland's Opus");
+    searcher.find("Scarface");
+    searcher.find("A Single Man");
+    searcher.find("Baise-moi");
 
     _getch();
 
