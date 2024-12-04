@@ -6,8 +6,14 @@
 * Villegas Arce, Carlos.
 * Davila Nuñez, Kurth.
 
+
+## Grabaciones
+https://drive.google.com/drive/folders/1BOYPeapDYdFi3nqsCxG0Vh-tf-NQLVzA?usp=sharing
+
 ## Plataforma de Streaming
 El objetivo del proyecto final es implementar una plataforma de **streaming**. Un programa que administre la **búsqueda y visualización** de la sinopsis de películas. Para ello se debe implementar las siguientes operaciones:
+
+
 
 * El programa debe leer la base de datos en forma **.csv**. La base de datos puede ser descargada desde el siguiente [link] (https://drive.google.com/file/d/1iusSIbmXJW_OUBm6X7Ik593rgCGPCPza/view?usp=sharing). El grupo es responsable del **pre-procesamiento de los datos**.
 * El programa debe cargar el contenido corregido del archivo en un **Árbol** que permita la búsqueda rápida de una película. Los caracteres (letras y números) deben ser los valores que se almacenen en los nodos del Árbol. 
