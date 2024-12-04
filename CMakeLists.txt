@@ -16,4 +16,5 @@ add_executable(P3_Project main.cpp
         src/main/suggestion-system/SuggestionSystem.h
         src/main/searcher/Searcher.h
         src/main/searcher/Searcher.cpp
+        src/main/user/User.h
 )
