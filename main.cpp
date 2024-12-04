@@ -366,44 +366,150 @@ public:
 //---------------------------------------------------------------------------------------------------------------------------------
 
 
-//Imprime las peliculas ver más tarde del usuario actual
-void verMasTarde() {
-    User *currentUser = UserSession::getCurrentUser(); // Obtener el usuario actual
-    if (!currentUser) {
-        cout << "No hay ningún usuario en sesión. Por favor, inicia sesión." << endl;
-        return;
-    }
 
-    unordered_set<string> peliculas = currentUser->getVerMasTarde(); // Obtener películas "ver más tarde"
 
-    if (peliculas.empty()) {
-        cout << "No tienes películas guardadas para ver más tarde." << endl;
-        return;
-    }
 
-    cout << "Películas guardadas para ver más tarde:" << endl;
-    int index = 1;
-    for (const string &pelicula: peliculas) {
-        cout << index++ << ". " << pelicula << endl; // Imprimir cada película enumerada
-    }
-}
+
+
 
 
 void buscarPeliculas() {
-    cout << "Buscador: ";
-    string input;
-    cin >> input;
-    cout << "\n";
+    UserSession* actualSesion;
+    while (true) {
+        cout << "Buscador: ";
+        string input;
+        cin.ignore();
+        getline(cin, input);
+        cout << "\n";
 
+        // Suponiendo que `Searcher` es una clase que maneja la búsqueda de las películas.
+        Searcher searcher("mpst_full_data.csv");
+        searcher.find(input);
+        auto suggestions = searcher.get_suggestions();
+
+        // Mostrar las sugerencias y sus índices
+        cout << "Sugerencias encontradas:\n";
+        for (size_t i = 0; i < suggestions.size(); ++i) {
+            const auto &e = suggestions[i];
+            const auto index = searcher.get_dataframe().search("title", e);
+            cout << index << " " << searcher.get_dataframe().get_data("title", index) << endl;
+        }
+
+        // Solicitar al usuario que seleccione un índice
+        cout << "Seleccione el índice de la película que le interesa: ";
+        int seleccion;
+        cin >> seleccion;
+
+
+        // Mostrar detalles de la película seleccionada
+        cout << seleccion << " " << searcher.get_dataframe().get_data("title", seleccion) << endl;
+        cout << "\nGéneros: ";
+        string genres = searcher.get_dataframe().get_data("tags", seleccion);
+        cout << genres << endl;
+
+        // Mostrar la sinopsis completa
+        cout << "Sinopsis completa: " << searcher.get_dataframe().get_data("plot_synopsis", seleccion) << endl;
+
+        // Opciones adicionales
+        cout << "\n¿Qué desea hacer?\n";
+        cout << "1. Buscar otra película\n";
+        cout << "2. Darle like\n";
+        cout << "3. Agregar a favoritos\n";
+        cout << "4. Salir\n";
+
+        int opcion;
+        cout << "Seleccione una opción: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                // Volver al inicio del bucle para buscar otra película
+                continue;
+            case 2:
+                // Llamar a la función para dar "like"
+                actualSesion->getCurrentUser()->addPeliculaLike(searcher.get_dataframe().get_data("title", seleccion));
+                cout << "¡Le diste like a la película!" << endl;
+                break;
+            case 3:
+                // Llamar a la función para agregar a favoritos
+                actualSesion->getCurrentUser()->addVerMasTarde(searcher.get_dataframe().get_data("title", seleccion));
+                cout << "Película agregada a ver más tarde" << endl;
+                break;
+            case 4:
+                // Salir del bucle y de la función
+                cout << "Saliendo del buscador..." << endl;
+                return;
+            default:
+                cout << "Opción no válida. Intente nuevamente.\n";
+                break;
+            }
+
+    }
+}
+
+//Imprime las peliculas ver más tarde del usuario actual
+void verMasTarde() {
+    UserSession* actualSesion;
+    if (!actualSesion) {
+        cout << "Error: No hay una sesión activa.\n";
+        return;
+    }
+
+    // Suponiendo que `Searcher` es una clase que maneja la búsqueda de las películas.
     Searcher searcher("mpst_full_data.csv");
-    searcher.find(input);
-    auto suggestions = searcher.get_suggestions();
 
-    for (const auto &e: suggestions) {
-        const auto index = searcher.get_dataframe().search("title", e);
-        cout << "Title: "<< searcher.get_dataframe().get_data("title", index) << endl;
-        cout << "ID: "<< searcher.get_dataframe().get_data("imdb_id", index) << endl;
-        cout << "Sypnosis: "<< searcher.get_dataframe().get_data("plot_synopsis", index) << endl;
+    // Obtener las películas de "ver más tarde" del usuario actual
+    auto peliculasVerMasTarde = actualSesion->getCurrentUser()->getVerMasTarde();
+    if (peliculasVerMasTarde.empty()) {
+        cout << "No tienes películas en tu lista de 'ver más tarde'.\n";
+        return;
+    }
+
+    while (true) {
+        cout << "Películas en tu lista de 'ver más tarde':\n";
+        for (const auto& pelicula : peliculasVerMasTarde) {
+            const auto index = searcher.get_dataframe().search("title", pelicula);
+            if (index != -1) {
+                cout << index << " " << searcher.get_dataframe().get_data("title", index) << endl;
+            } else {
+                cout << "Película no encontrada en la base de datos: " << pelicula << endl;
+            }
+        }
+
+        // Solicitar al usuario que seleccione un índice
+        cout << "\nSeleccione el índice de la película que le interesa, o -1 para salir: ";
+        int seleccion;
+        cin >> seleccion;
+
+        if (seleccion == -1) {
+            cout << "Saliendo del menú 'ver más tarde'.\n";
+            break;
+        }
+
+        // Mostrar detalles de la película seleccionada
+        cout << seleccion << " " << searcher.get_dataframe().get_data("title", seleccion) << endl;
+        cout << "\nGéneros: ";
+        string genres = searcher.get_dataframe().get_data("tags", seleccion);
+        cout << genres << endl;
+
+        cout << "Sinopsis completa: " << searcher.get_dataframe().get_data("plot_synopsis", seleccion) << endl;
+
+
+        // Opciones adicionales
+        cout << "\n¿Qué desea hacer?\n";
+        cout << "1. Buscar otra película\n";
+        cout << "2. Salir\n";
+        cout << "Seleccione una opción: ";
+
+        int opcion;
+        cin >> opcion;
+
+        if (opcion == 2) {
+            cout << "Saliendo del menú 'ver más tarde'.\n";
+            break;
+        } else if (opcion != 1) {
+            cout << "Opción no válida. Intente nuevamente.\n";
+        }
     }
 }
 
@@ -433,7 +539,7 @@ void menu() {
                 buscarPeliculas();
                 break;
             case 2:
-                //verMasTarde();
+                verMasTarde();
                 break;
             case 3:
                 //verLikes();

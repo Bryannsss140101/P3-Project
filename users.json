@@ -1,0 +1,46 @@
+{
+    "users": [
+        {
+            "email": "a",
+            "password": "a",
+            "peliculasLike": [],
+            "username": "a",
+            "verMasTarde": []
+        },
+        {
+            "email": "juanperez@email.com",
+            "password": "1234",
+            "peliculasLike": [
+                "Inception",
+                "Interstellar",
+                "The Dark Knight"
+            ],
+            "username": "juanperez",
+            "verMasTarde": [
+                "Dunkirk",
+                "Tenet"
+            ]
+        },
+        {
+            "email": "mariafernandez@email.com",
+            "password": "password123",
+            "peliculasLike": [
+                "The Matrix",
+                "Memento",
+                "The Prestige"
+            ],
+            "username": "mariafernandez",
+            "verMasTarde": [
+                "The Imitation Game",
+                "The Social Network"
+            ]
+        },
+        {
+            "email": "efe@gmail.com",
+            "password": "4321",
+            "peliculasLike": [],
+            "username": "Kurth",
+            "verMasTarde": []
+        }
+    ]
+}
