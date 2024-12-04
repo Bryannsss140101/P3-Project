@@ -5,15 +5,20 @@
 
 #include "src/main/csv/Csv.h"
 #include "src/main/dataframe/DataFrame.h"
+#include "src/main/searcher/Searcher.h"
+#include "src/main/suggestion-system/SuggestionSystem.h"
 
 using namespace std;
 
 int main() {
-    /*auto csv = Csv("mpst_full_data.csv");
-    csv.read_csv();
-    auto df = csv.get_dataframe();
+    Searcher searcher("mpst_full_data.csv");
 
-    cout << df.get_data() << endl;*/
+    searcher.find("Scar");
+
+    for (auto s = searcher.get_suggestions(); const auto &e: s) {
+        cout << s << endl;
+    }
+
 
     _getch();
 

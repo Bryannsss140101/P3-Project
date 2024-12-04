@@ -12,4 +12,8 @@ add_executable(P3_Project main.cpp
         src/main/trie/Trie.cpp
         src/main/trie/Trie.h
         src/main/node/TrieNode.h
+        src/main/suggestion-system/SuggestionSystem.cpp
+        src/main/suggestion-system/SuggestionSystem.h
+        src/main/searcher/Searcher.h
+        src/main/searcher/Searcher.cpp
 )
