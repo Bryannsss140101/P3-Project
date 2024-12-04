@@ -1,3 +1,0 @@
-D:/Programming III/P3-Project/cmake-build-debug/CMakeFiles/P3_Project.dir
-D:/Programming III/P3-Project/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Programming III/P3-Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

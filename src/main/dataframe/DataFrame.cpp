@@ -3,10 +3,17 @@
 //
 
 #include "DataFrame.h"
+#include <algorithm>
 
-const Dictionary<std::string, std::vector<std::string> >
-&DataFrame::get_data() const {
-    return data;
+int DataFrame::search(const std::string &colum_name, const std::string &word) {
+    auto aux = data[colum_name];
+    const auto it = std::ranges::find_if(aux, [&](const auto &e) {
+        return e == word;
+    });
+
+    if (it != aux.end())
+        return std::distance(aux.begin(), it);
+    return -1;
 }
 
 void DataFrame::add_header(const std::vector<std::string> &header) {
@@ -26,6 +33,19 @@ void DataFrame::add_row(const std::vector<std::string> &row) {
 
         data[key].push_back(value);
     }
+}
+
+std::vector<std::string> DataFrame::get_data(const std::string &key) {
+    return data[key];
+}
+
+std::string DataFrame::get_data(const std::string &key, const int index) {
+    return data[key][index];
+}
+
+DataFrame &DataFrame::operator=(const DataFrame &other) {
+    this->data = other.data;
+    return *this;
 }
 
 std::ostream &operator<<(std::ostream &os, const DataFrame &other) {
