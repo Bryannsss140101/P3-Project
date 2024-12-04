@@ -16,7 +16,7 @@ void Searcher::find(const std::string &input) {
     if (title.exist(input)) {
         const auto aux = title.search(input);
         SuggestionSystem suggestion_system(aux);
-        suggestions = suggestion_system.generate_suggestions();
+        suggestions = suggestion_system.generate_suggestions(input);
     }
 }
 

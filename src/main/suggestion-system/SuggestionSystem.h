@@ -15,7 +15,7 @@ public:
         : root_node(root_node) {
     }
 
-    std::vector<std::string> generate_suggestions();
+    std::vector<std::string> generate_suggestions(const std::string& prefix);
 
 private:
     TrieNode<char> *root_node;
