@@ -11,8 +11,6 @@
 
 class Searcher {
 public:
-    std::vector<std::string> get_suggestions();
-
     explicit Searcher(const std::string &file);
 
     void find(const std::string &input);

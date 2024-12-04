@@ -5,10 +5,6 @@
 #include "Searcher.h"
 #include <algorithm>
 
-std::vector<std::string> Searcher::get_suggestions() {
-    return suggestions;
-}
-
 Searcher::Searcher(const std::string &file) {
     auto csv = Csv(file);
     csv.read_csv();
@@ -20,7 +16,7 @@ void Searcher::find(const std::string &input) {
     if (title.exist(input)) {
         const auto aux = title.search(input);
         SuggestionSystem suggestion_system(aux);
-        suggestions = suggestion_system.generate_suggestions();
+        suggestions = suggestion_system.generate_suggestions(input);
     }
 }
 
