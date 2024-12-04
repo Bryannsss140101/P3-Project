@@ -39,6 +39,8 @@ public:
 
     TValue &operator[](const TKey &key);
 
+    Dictionary &operator=(const Dictionary &other);
+
     template<class K, class V>
     friend std::ostream &operator<<(std::ostream &os, const Dictionary<K, V> &other);
 
@@ -107,6 +109,12 @@ TValue &Dictionary<TKey, TValue>::operator[](const TKey &key) {
         throw std::out_of_range("The key does not exist in the dictionary");
 
     return it->second;
+}
+
+template<class TKey, class TValue>
+Dictionary<TKey, TValue> &Dictionary<TKey, TValue>::operator=(const Dictionary &other) {
+    this->collection = other.collection;
+    return *this;
 }
 
 inline std::ostream &operator <<(std::ostream &os, const std::vector<std::string> &other) {
