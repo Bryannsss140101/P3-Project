@@ -14,9 +14,9 @@
 using namespace std;
 
 int main() {
-    string a;
+    string base;
     cout<<"Ingrese la palabra: "<<endl;
-    cin>>a;
+    cin>>base;
 
     Trie titulo;
     Trie sinopsis;
@@ -38,24 +38,24 @@ int main() {
     sinopsis.insert("barco Adios");
 
     // Búsqueda en "titulo"
-    TrieNode<char>* T = titulo.search(a);
+    TrieNode<char>* T = titulo.search(base);
     std::cout << "Dirección de 'barco' en titulo: " << T << std::endl;
 
     SuggestionSystem suggestion_system(T);
-    std::vector<std::string> suggestions = suggestion_system.generate_suggestions();
 
+    std::vector<std::string> suggestions = suggestion_system.generate_suggestions(base);
     for (const auto& suggestion : suggestions)
-        std::cout << "Sugerencias para "<<a<<" en el titulo:  " <<a<<" "<<suggestion << std::endl;
+        std::cout << "Sugerencias en titulo: "<<suggestion << std::endl;
 
     // Búsqueda en "sinopsis"
     TrieNode<char>* S = sinopsis.search("barco");
     std::cout << "\nDirección de 'barco' en sinopsis: " << S << std::endl;
 
     SuggestionSystem suggestion_system2(S);
-    std::vector<std::string> suggestions2 = suggestion_system2.generate_suggestions();
+    std::vector<std::string> suggestions2 = suggestion_system2.generate_suggestions(base);
 
     for (const auto& suggestion : suggestions2)
-        std::cout << "Sugerencias para 'barco' en sinopsis: " << suggestion << std::endl;
+        std::cout << "Sugerencias en sinopsis: " << suggestion << std::endl;
 
     std::cout<<std::endl;
     _getch();
