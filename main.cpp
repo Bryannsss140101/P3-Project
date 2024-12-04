@@ -11,8 +11,13 @@
 #include <conio.h>
 #include "src/main/suggestion-system/SuggestionSystem.h"
 #include "src/main/trie/Trie.h"
+using namespace std;
 
 int main() {
+    string a;
+    cout<<"Ingrese la palabra: "<<endl;
+    cin>>a;
+
     Trie titulo;
     Trie sinopsis;
 
@@ -33,14 +38,14 @@ int main() {
     sinopsis.insert("barco Adios");
 
     // Búsqueda en "titulo"
-    TrieNode<char>* T = titulo.search("barco");
+    TrieNode<char>* T = titulo.search(a);
     std::cout << "Dirección de 'barco' en titulo: " << T << std::endl;
 
     SuggestionSystem suggestion_system(T);
     std::vector<std::string> suggestions = suggestion_system.generate_suggestions();
 
     for (const auto& suggestion : suggestions)
-        std::cout << "Sugerencias para 'barco' en titulo: " << suggestion << std::endl;
+        std::cout << "Sugerencias para "<<a<<" en el titulo:  " <<a<<" "<<suggestion << std::endl;
 
     // Búsqueda en "sinopsis"
     TrieNode<char>* S = sinopsis.search("barco");
@@ -51,7 +56,8 @@ int main() {
 
     for (const auto& suggestion : suggestions2)
         std::cout << "Sugerencias para 'barco' en sinopsis: " << suggestion << std::endl;
-    cout<<endl;
+
+    std::cout<<std::endl;
     _getch();
     return 0;
 }

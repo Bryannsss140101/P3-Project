@@ -7,10 +7,11 @@
 #include <sstream>
 #include "../node/TrieNode.h"
 #include "SuggestionSystem.h"
+using namespace std;
 
 std::vector<std::string> SuggestionSystem::generate_suggestions() {
     std::vector<std::string> suggestions;
-    generate_suggestions_helper(root_node, "", suggestions);
+    generate_suggestions_helper(root_node,"", suggestions);
     return suggestions;
 }
 
@@ -21,10 +22,12 @@ void SuggestionSystem::generate_suggestions_helper(
 
     if (node == nullptr) return;
 
+    // Si el nodo es final de una palabra, agrega el prefijo y la palabra completa
     if (node->get_end()) {
-        suggestions.push_back(prefix); // Agrega el prefijo actual si es una palabra completa
+        suggestions.push_back(prefix); // Agrega el prefijo como sugerencia
     }
 
+    // Recorre los nodos hijos y genera sugerencias agregando el carácter actual
     for (const auto& [key, child_node] : node->get_nodes()) {
         generate_suggestions_helper(child_node, prefix + key, suggestions);
     }
@@ -37,6 +40,16 @@ std::vector<std::string> search_with_prefix(Trie& tree, const std::string& prefi
     if (node) {
         SuggestionSystem suggestion_system(node);
         suggestions = suggestion_system.generate_suggestions();
+
+        // Concatenar el prefijo con cada sugerencia
+        for (auto& suggestion : suggestions) {
+            suggestion = prefix + " " + suggestion; // Concatenar "barco" a cada sugerencia
+        }
+
+        // Mostrar las sugerencias
+        for (const auto& suggestion : suggestions) {
+            std::cout << suggestion << std::endl; // Imprime cada sugerencia con el prefijo
+        }
     }
 
     return suggestions;
