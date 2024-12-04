@@ -15,23 +15,22 @@ std::vector<std::string> SuggestionSystem::generate_suggestions() {
 }
 
 void SuggestionSystem::generate_suggestions_helper(
-    TrieNode<char>* node,
-    const std::string& prefix,
-    std::vector<std::string>& suggestions) {
-
+    TrieNode<char> *node,
+    const std::string &prefix,
+    std::vector<std::string> &suggestions) {
     if (node == nullptr) return;
 
     if (node->get_end()) {
         suggestions.push_back(prefix); // Agrega el prefijo actual si es una palabra completa
     }
 
-    for (const auto& [key, child_node] : node->get_nodes()) {
+    for (const auto &[key, child_node]: node->get_nodes()) {
         generate_suggestions_helper(child_node, prefix + key, suggestions);
     }
 }
 
-std::vector<std::string> search_with_prefix(Trie& tree, const std::string& prefix) {
-    TrieNode<char>* node = tree.search(prefix);
+std::vector<std::string> search_with_prefix(Trie &tree, const std::string &prefix) {
+    TrieNode<char> *node = tree.search(prefix);
     std::vector<std::string> suggestions;
 
     if (node) {
@@ -42,7 +41,7 @@ std::vector<std::string> search_with_prefix(Trie& tree, const std::string& prefi
     return suggestions;
 }
 
-std::vector<std::string> search_with_phrase(Trie& tree, const std::string& phrase) {
+std::vector<std::string> search_with_phrase(Trie &tree, const std::string &phrase) {
     std::istringstream stream(phrase);
     std::string word;
     std::vector<std::string> results;
