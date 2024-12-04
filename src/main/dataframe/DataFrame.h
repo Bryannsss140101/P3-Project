@@ -16,6 +16,8 @@ public:
 
     ~DataFrame() = default;
 
+    int search(const std::string &colum_name, const std::string &word);
+
     void add_header(const std::vector<std::string> &header);
 
     void add_column(const std::string &column_name);
@@ -24,7 +26,9 @@ public:
 
     std::vector<std::string> get_data(const std::string &key);
 
-    DataFrame& operator=(const DataFrame& other);
+    std::string get_data(const std::string &key, int index);
+
+    DataFrame &operator=(const DataFrame &other);
 
     friend std::ostream &operator<<(std::ostream &os, const DataFrame &other);
 

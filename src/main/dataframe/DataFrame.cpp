@@ -3,6 +3,18 @@
 //
 
 #include "DataFrame.h"
+#include <algorithm>
+
+int DataFrame::search(const std::string &colum_name, const std::string &word) {
+    auto aux = data[colum_name];
+    const auto it = std::ranges::find_if(aux, [&](const auto &e) {
+        return e == word;
+    });
+
+    if (it != aux.end())
+        return std::distance(aux.begin(), it);
+    return -1;
+}
 
 void DataFrame::add_header(const std::vector<std::string> &header) {
     std::ranges::for_each(header, [this](const auto &e) {
@@ -25,6 +37,10 @@ void DataFrame::add_row(const std::vector<std::string> &row) {
 
 std::vector<std::string> DataFrame::get_data(const std::string &key) {
     return data[key];
+}
+
+std::string DataFrame::get_data(const std::string &key, const int index) {
+    return data[key][index];
 }
 
 DataFrame &DataFrame::operator=(const DataFrame &other) {

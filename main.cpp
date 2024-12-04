@@ -19,7 +19,6 @@ int main() {
         cout << s << endl;
     }
 
-
     _getch();
 
     return 0;
