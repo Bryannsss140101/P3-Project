@@ -11,6 +11,14 @@
 
 class Searcher {
 public:
+    DataFrame &get_dataframe() {
+        return df;
+    }
+
+    std::vector<std::string> get_suggestions() {
+        return suggestions;
+    }
+
     explicit Searcher(const std::string &file);
 
     void find(const std::string &input);
